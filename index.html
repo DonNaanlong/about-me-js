@@ -4,13 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css"> 
-    <script src="script.js"></script>
-    <title>Document</title>
+    <title>A little info about me</title>
+    <style>
+        body {
+          background-color: #ffff;
+          margin: 0;
+          padding: 2rem;
+        }
+        .profile {
+          background-color: #574;
+          max-width: 800px;
+          margin: 2rem auto;
+          padding: 2rem;
+          border-radius: 12px;
+        }
+        h1 {
+          color: #fff;
+        }
+        h2 {
+          color: #fff;
+          margin-top: 1.5rem;
+        }
+        p {
+          color: #fff;
+        }
+      </style>
 </head>
 <body>
-    <div id="app"></div>
     <script>
+        let profile = document.createElement('div');
+        profile.className = 'profile';
+    
+        let title = document.createElement('h1');
+        title.textContent = 'ABOUT ME';
+        let info = document.createElement('p');
+        info.textContent = 'Im DESHI NAANLONG JOSHUA, I hail from kerang, Mangu L.G.A Plateau state,';
+    
+        let educationTitle = document.createElement('h2');
+        educationTitle.textContent = 'EDUCATION AND SKILLS';
+        let education = document.createElement('p');
+        education.textContent = 'I am a graduate from COCIN nursary/primary school kerang, after i procceded to government secondary Ampang West. im currently a student at Blockfuse labs Rayfield,Jos .Am good at HTML/CSS and tailwind CSS, currently learning javascript.';
+    
+        let interestsTitle = document.createElement('h2');
+        interestsTitle.textContent = 'HOBBIES';
+        let interests = document.createElement('p');
+        interests.textContent = 'Apart from coding, i enjoy reading,going to the gym, playing games like ludo,whot, i also love listening to music and watching football.';
+    
+        let visionTitle = document.createElement('h2');
+        visionTitle.textContent = 'VISION';
+        let vision = document.createElement('p');
+        vision.textContent = 'i want to become a top-tier software engineer and make significant contributions to the African tech ecosystem. I believes in continuous learning and collaboration to grow as a developer.';
         
-    </script>
+        profile.appendChild(title);
+        profile.appendChild(info);
+        profile.appendChild(educationTitle);
+        profile.appendChild(education);
+        profile.appendChild(interestsTitle);
+        profile.appendChild(interests);
+        profile.appendChild(visionTitle);
+        profile.appendChild(vision);
+        document.body.appendChild(profile);
+</script>    
 </body>
 </html>
